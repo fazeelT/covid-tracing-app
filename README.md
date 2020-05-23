@@ -9,8 +9,8 @@ This application run on heroku platform and needs GrapheneDB addon.
 Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
 
 ```sh
-$ git clone https://github.com/fazeelT/covid-contact-tracing.git # or clone your own fork
-$ cd covid-contact-tracing
+$ git clone https://github.com/fazeelT/covid-tracing-app.git # or clone your own fork
+$ cd covid-tracing-app
 Modify .env file
 $ npm install
 $ npm start
