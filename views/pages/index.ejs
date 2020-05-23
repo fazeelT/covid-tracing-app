@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../partials/header.ejs %>
+  </head>
+
+  <body>
+
+    <% include ../partials/nav.ejs %>
+
+    <div class="text-center">
+      <div class="container"> 
+        <h1>Contacts Tracing app</h1>
+        <p>Report contact to add to contact traces to detect COVID 19 virus.</p>
+      </div>
+    </div>
+    <div class="container">
+      <form id="createContactTraceForm" name="createContactTraceForm" action="">
+      <div class="form-group">
+        <label for="myName">Name</label>
+        <input type="name" class="form-control" id="myFName" name="myFName" placeholder="First Name">
+        <input type="name" class="form-control" id="myLName" name="myLName" placeholder=" Last Name">
+      </div>
+      <div class="form-group">
+        <label for="contactName">Contact Name</label>
+        <input type="name" class="form-control" id="contactFName" name="contactFName" placeholder="First Name">
+        <input type="name" class="form-control" id="contactLName" name="contactLName" placeholder="Last Name">
+      </div>
+      <div class="form-group">
+        <label for="dateOfMeeting">Date of Meeting</label>
+        <input type="date" class="form-control" name="dateOfMeeting">
+      </div>
+      <div class="form-group">
+        <label for="timeOfMeeting">Time of Meeting</label>
+        <input type="time" class="form-control" name="timeOfMeeting">
+      </div>
+      <div class="form-group">
+        <label for="locationOfMeeting">Location Of Meeting</label>
+        <input type="text" class="form-control" name="locationOfmeeting" id="locationOfMeeting"  placeholder="1234 abc street DEFCITY ST USA">
+      </div>
+      <button type="submit" id="submitContactTrace" class="btn btn-primary"> 
+        Submit
+      </button>
+    </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+  <% include ../partials/nav.ejs %>
+
+<div class="text-center">
+      <div class="container"> 
+        <h1>Contacts Tracing app</h1>
+        <p>Trace people you have been in touch with.</p>
+      </div>
+    </div>
+    <div class="container">
+      <form id="searchContactTraceForm" name="searchContactTraceForm" action="">
+      <div class="form-group">
+        <label for="contactName">Name</label>
+        <input type="name" class="form-control" id="contactFName" name="contactFName" placeholder="First Name">
+        <input type="name" class="form-control" id="contactLName" name="contactLName" placeholder=" Last Name">
+      </div>
+      <div class="form-group">
+        <label for="dateOfMeeting">Date of Meeting</label>
+        <input type="date" class="form-control" name="dateOfMeeting">
+      </div>
+      <div class="form-group">
+        <label for="timeOfMeeting">Time of Meeting</label>
+        <input type="time" class="form-control" name="timeOfMeeting">
+      </div>
+      <button type="submit" id="submitSearchContactTrace" class="btn btn-primary">  Submit
+      </button>
+    </form>
+
+    <table id="contactsTable" class="table table-striped">
+      <thead>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+      </thead>
+    </table>
+    </div>
+</body>
+</html>
